@@ -7,11 +7,12 @@ public interface StudentService {
 
     Object getStudent(int roll_no);
 
+    List<Student> getStudentByBranch(String branch);
+
     List<Student> getAllStudent();
 
     Student updateStudent(int roll_no, Student student);
 
     String deleteStudent(int roll_no);
 
-    List<Student> getStudentByBranch(String branch);
 }
